@@ -27,6 +27,10 @@ a {
     text-decoration: none;
 }
 
+::placeholder {
+    color: #ffffffef;
+}
+
 #header {
     width: 100%;
     display: flex;
@@ -109,10 +113,12 @@ nav ul li a span {
     display: flex;
     align-items: center;
     padding: 3px 5px 3px 3px;
+    transition: 0.2s;
+
 }
 
 .profile_container:hover {
-    background: rgba(192, 192, 192, 0.822);
+    background: #fcfcfc2e;
     border-radius: 25px;
     cursor: pointer;
 
@@ -152,24 +158,24 @@ nav ul li a span {
 
 .profile_area ul li a i {
     font-size: 25px;
-    background-color: #949494b3;
+    background-color: #94949482;
     padding: 6px;
     border-radius: 50%;
 }
 
 .profile_area ul li a i:hover {
-    background: #9c9c9c;
+    background: #9c9c9cda;
 }
 
 .profile_area ul li a span {
     font-size: 26px;
-    background: #949494b3;
+    background: #94949482;
     padding: 5px;
     border-radius: 50%;
 }
 
 .profile_area ul li a span:hover {
-    background: #9c9c9c;
+    background: #9c9c9ce0;
 
 }
 
@@ -297,7 +303,74 @@ button:hover {
     flex-basis: 330px;
     height: calc(100vh);
     padding-top: 56px;
+    background-color: #2c2b2b;
+    height: calc(100vh);
+    padding: 75px 15px 0 15px;
+    overflow: auto;
 }
+
+.birthday_box {
+    padding: 15px;
+    background: #4b4b4bb3;
+    border-radius: 5px;
+
+}
+
+.left_birthday {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left_birthday h4 {
+    display: flex;
+    align-items: center;
+}
+
+.left_birthday img {
+    margin-right: 8px;
+}
+
+.right_birthday {
+    padding: 6px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    background-color: unset;
+    color: white;
+}
+
+.right_birthday:hover {
+    cursor: pointer;
+    background: #c0c0c059;
+
+}
+
+.right_birthday i {}
+
+.bottom_birthday {
+    margin: 10px 0;
+}
+
+.bottom_birthday a {
+    color: white;
+}
+
+.create_grupe {
+    width: 30px;
+    height: 30px;
+    background: #706b6bc4;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.create_grupe span {}
 
 /* scrollbar style */
 /* width */
@@ -321,6 +394,7 @@ button:hover {
     border-radius: 5px;
     display: none;
 
+
 }
 
 /* Handle on hover */
@@ -329,5 +403,9 @@ button:hover {
 }
 
 .left_aside:hover::-webkit-scrollbar-thumb {
+    display: block;
+}
+
+.right_aside:hover::-webkit-scrollbar-thumb {
     display: block;
 }
