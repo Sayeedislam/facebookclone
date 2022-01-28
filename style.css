@@ -459,7 +459,7 @@ button:hover {
 }
 
 .single_post {
-    padding: 8px;
+   
     background: rgba(60, 60, 60, 0.9);
     border-radius: 6px;
 }
@@ -468,6 +468,7 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 8px;
 }
 
 .poster_left_area {
@@ -497,6 +498,7 @@ button:hover {
 .poster_date {
     display: flex;
     align-items: center;
+    font-size: 13px;
 }
 
 .poster_date span {
