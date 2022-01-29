@@ -13,6 +13,7 @@
 
 body {
     font-family: facebookfont;
+    background-color: rgb(44, 43, 43);
 }
 
 html {
@@ -309,6 +310,8 @@ button:hover {
     border-radius: 6px;
     background: rgba(70, 70, 70, 0.7);
     padding: 15px 15px 5px;
+    max-width: 570px;
+    margin: 0 auto;
 }
 
 .own_post_top {
@@ -393,20 +396,21 @@ button:hover {
 }
 
 .room_area {
-    margin: 15px 0px;
+    margin: 15px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: rgba(128, 128, 128, 0.35);
     padding: 15px;
     border-radius: 6px;
+    max-width: 570px;
 }
 
 .room_area button {
     display: flex;
     background: rgb(24, 25, 26);
     outline: none;
-    padding: 10px 15px;
+    padding: 10px 11px;
     border: 2px solid rgb(93, 121, 226);
     border-radius: 25px;
     color: rgb(69, 153, 255);
@@ -434,7 +438,7 @@ button:hover {
 .room_area ul li {
     width: 40px;
     height: 40px;
-    margin: 0px 4px;
+    margin: 0px 1px;
     display: flex;
     align-items: center;
 
@@ -459,9 +463,12 @@ button:hover {
 }
 
 .single_post {
-   
+
     background: rgba(60, 60, 60, 0.9);
     border-radius: 6px;
+    padding-bottom: 6px;
+    max-width: 570px;
+    margin: 0 auto 13px;
 }
 
 .poster_profile_box {
@@ -508,13 +515,36 @@ button:hover {
     /* align-items: center; */
 }
 
-.poster_right_icon {}
+.poster_right_icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.poster_right_icon:hover {
+    background: #808080d1;
+
+}
 
 .poster_right_icon span {}
 
 .post_contents {
-    margin: 22px 0 0;
     max-width: 100%;
+}
+
+.post_text {
+    margin: 10px 0;
+}
+
+.post_text h3 {
+    padding: 0 5px;
+    font-size: 14px;
+    color: #ffffffe8;
 }
 
 .post_contents img {
