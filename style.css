@@ -310,7 +310,7 @@ button:hover {
     border-radius: 6px;
     background: rgba(70, 70, 70, 0.7);
     padding: 15px 15px 5px;
-    max-width: 570px;
+    max-width: 650px;
     margin: 0 auto;
 }
 
@@ -403,7 +403,7 @@ button:hover {
     background: rgba(128, 128, 128, 0.35);
     padding: 15px;
     border-radius: 6px;
-    max-width: 570px;
+    max-width: 650px;
 }
 
 .room_area button {
@@ -467,7 +467,7 @@ button:hover {
     background: rgba(60, 60, 60, 0.9);
     border-radius: 6px;
     padding-bottom: 6px;
-    max-width: 570px;
+    max-width: 650px;
     margin: 0 auto 13px;
 }
 
