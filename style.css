@@ -738,12 +738,13 @@ button:hover {
 .iconss::after {
     content: '';
     position: absolute;
-    width: 7px;
-    height: 7px;
+    width: 8px;
+    height: 8px;
     background-color: #12e112e0;
     border-radius: 50%;
     bottom: 4px;
     right: 4px;
+    border: 1px solid black;
 
 }
 
