@@ -306,12 +306,96 @@ button:hover {
     overflow: auto;
 }
 
+.storys_wraper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 28px;
+}
+
+.story {
+    /* border-radius: 8px; */
+    display: flex;
+    height: 200px;
+    flex-basis: 18%;
+    border-radius: 8px;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-between;
+}
+
+.story_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.story h4 {
+    position: absolute;
+    left: 10px;
+    bottom: 4px;
+}
+
+.story_avator {
+    border: 1px solid #11ff696b;
+    position: absolute;
+    top: 7px;
+    left: 8px;
+    /* bottom: -6px; */
+    b: absolute;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+
+.story_avator img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.create_story img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    /* border-radius: 8px; */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.own_story_content {
+    position: relative;
+    flex-basis: 50px;
+    background: #525050cc;
+    /* border-radius: 8px; */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.own_story_content h3 {
+    font-size: 16px;
+    padding: 10px 9px 0;
+    /* margin: auto; */
+}
+
+.own_story_content span {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    background: #2eb3fb;
+    color: white;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 1px solid #302f2f;
+    padding: 2px;
+}
+
 .own_post_area {
     border-radius: 6px;
     background: rgba(70, 70, 70, 0.7);
     padding: 15px 15px 5px;
     max-width: 650px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 
 .own_post_top {
@@ -441,7 +525,6 @@ button:hover {
     margin: 0px 1px;
     display: flex;
     align-items: center;
-
 }
 
 .room_area ul li img {
@@ -459,16 +542,14 @@ button:hover {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-
 }
 
 .single_post {
-
     background: rgba(60, 60, 60, 0.9);
     border-radius: 6px;
     padding-bottom: 6px;
     max-width: 650px;
-    margin: 0 auto 13px;
+    margin: 0px auto 13px;
 }
 
 .poster_profile_box {
@@ -510,9 +591,6 @@ button:hover {
 
 .poster_date span {
     font-size: 15px;
-    /* justify-content: center; */
-    /* display: flex; */
-    /* align-items: center; */
 }
 
 .poster_right_icon {
@@ -523,12 +601,11 @@ button:hover {
     justify-content: center;
     border-radius: 50%;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease 0s;
 }
 
 .poster_right_icon:hover {
-    background: #808080d1;
-
+    background: rgba(128, 128, 128, 0.82);
 }
 
 .poster_right_icon span {}
@@ -538,13 +615,13 @@ button:hover {
 }
 
 .post_text {
-    margin: 10px 0;
+    margin: 10px 0px;
 }
 
 .post_text h3 {
-    padding: 0 5px;
+    padding: 0px 5px;
     font-size: 14px;
-    color: #ffffffe8;
+    color: rgba(255, 255, 255, 0.91);
 }
 
 .post_contents img {
@@ -555,7 +632,7 @@ button:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 8px;
+    padding: 0px 8px;
 }
 
 .likes_div {
@@ -584,7 +661,7 @@ button:hover {
 .comment_shair {}
 
 .comment_shair a {
-    color: #ffffffe8;
+    color: rgba(255, 255, 255, 0.91);
 }
 
 .comment_shair a:first-child {
@@ -599,7 +676,7 @@ button:hover {
 }
 
 .actions {
-    padding: 0 26px;
+    padding: 0px 26px;
 }
 
 .actions ul {
@@ -614,12 +691,11 @@ button:hover {
     align-items: center;
     cursor: pointer;
     border-radius: 6px;
-    transition: 0.3s;
-
+    transition: all 0.3s ease 0s;
 }
 
 .actions ul li:hover {
-    background-color: #545353;
+    background-color: rgb(84, 83, 83);
 }
 
 .actions ul li img {
@@ -732,20 +808,18 @@ button:hover {
     display: flex;
     align-items: center;
     position: relative;
-
 }
 
 .iconss::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 8px;
     height: 8px;
-    background-color: #12e112e0;
+    background-color: rgba(79, 248, 79, 0.88);
     border-radius: 50%;
     bottom: 4px;
     right: 4px;
     border: 1px solid black;
-
 }
 
 .iconss img {}
