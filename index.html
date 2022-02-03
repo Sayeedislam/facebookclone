@@ -10,6 +10,7 @@
 
     <script src="https://kit.fontawesome.com/5e2bc6aafc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./responsive.css">
 </head>
 <body>
     <!-- Header start -->
@@ -24,29 +25,39 @@
                 </span>
               <input type="text" placeholder="Search facebook" name="" id="">
           </div>
+          <div class="menu_toggoler">
+            <div class="menues">
+                <span class="material-icons-outlined">
+                    menu
+                    </span>
+            </div>
+          </div>
         </div>
         <nav>
             <ul>
-                <li><a href=""><span class="material-icons-outlined">
+                <li><a data-tag="Home"href=""><span class="material-icons-outlined">
                     home
                     </span>
                 </a></li>
-                <li><a href="">
+                <li><a data-tag="Watch" href="">
                     <span class="material-icons-outlined"> ondemand_video </span>
                 </a></li>
-                <li><a href="">
+                <li><a data-tag="Marketplace" href="">
                     <span class="material-icons-outlined">
                         storefront
                         </span>
                 </a></li>
-                <li><a href="">
+                <li><a data-tag="Groups" href="">
                     <span class="material-icons-outlined"> groups </span>
                 </a></li>
-                <li><a href="">
+                <li><a data-tag="Gaming" href="">
                     <span class="material-icons-outlined">
                         extension
                         </span>
                 </a></li>
+                <li><a href=""><span class="material-icons-outlined">
+                    menu
+                    </span></a></li>
             </ul>
         </nav>
         <div class="profile_area">
@@ -55,7 +66,14 @@
                     <img src="./images/plogo.jpg" alt="">
                 </div>
                 <h4>Sayeed</h4>
-            </div>
+            </div> 
+             <div class="profile_add_btn">
+                 <div class="add_icon_box">
+                    <span class="material-icons-outlined">
+                        add
+                        </span>
+                 </div>
+             </div>
             <ul>
                 <li><a href=""><span class="material-icons-outlined">
                     widgets
@@ -131,7 +149,7 @@
 
                 <div class="story">
                     <div class="story_avator">
-                        <img src="./images/shorif.jpg" alt="">
+                        <img src="./images/toufiqe.jpg" alt="">
                     </div>
                     <img class="story_img"src="./images/story_img3.jpg" alt="">
                    <h4> Md. Towfiqe ahamed</h4>
@@ -140,10 +158,10 @@
 
                 <div class="story">
                     <div class="story_avator">
-                        <img src="./images/shorif.jpg" alt="">
+                        <img src="./images/sabbirp.jpg" alt="">
                     </div>
-                    <img class="story_img"src="./images/story_img5.jpg" alt="">
-                   <h4> Zakir ahamed</h4>
+                    <img class="story_img"src="./images/sabbir.jpg" alt="">
+                   <h4>Alex Sabbir</h4>
                 </div>
 
 
@@ -193,9 +211,9 @@
                     <li><div class="iconss"><img src="./images/pavel.jpg" alt=""></div></li>
                     <li><div class="iconss"><img src="./images/jakir.jpg" alt=""></div></li>
                    
-                   <li class="position_style"><span class="material-icons-outlined">
+                   <div class="position_style"><span class="material-icons-outlined">
                     chevron_right
-                  </span></li>
+                  </span></div>
                     
                 </ul>
             </div>
@@ -250,6 +268,7 @@
                 </div>
 
             </div>
+
             <div class="single_post secend_post">
                 <div class="poster_profile_box">
                    <div class="poster_left_area">
@@ -304,6 +323,61 @@
                 </div>
 
             </div>
+            <div class="single_post secend_post">
+                <div class="poster_profile_box">
+                   <div class="poster_left_area">
+                    <div class="poster_logo iconss">
+                       <img src="./images/tahervai.jpg" alt="">
+                    </div>
+                    <div class="poster_name">
+                       <p><a href="#"><strong>Abu Taher Muhammad AL-Healal</strong></a> post a image
+                       </p>
+                       <div class="poster_date">
+                        January 29 at 8.22 PM · <span class="material-icons-outlined">
+                            public
+                          </span>
+                       </div>
+
+                    </div>
+                   </div>
+                   <div class="poster_right_icon">
+                    <span class=" material-icons-outlined">
+                        more_horiz
+                      </span>
+                   </div>
+                </div>
+
+                <div class="post_contents">
+                    <div class="post_text">
+                        <h3>We got someone from NYPD.....</h3>
+                    </div>
+                  <img src="./images/taherpost.jpg" alt="">
+                </div>
+                <div class="reaction">
+                    <div class="likes_div">
+                         <div class="likes_logo">
+                            <img src="./images/like.png" alt="">
+                            <img src="./images/love.png" alt="">
+                         </div>
+                        <p>50K</p>
+                    </div>
+                    <div class="comment_shair">
+                        <a href="#">500K Comments</a>
+                        <a href="#">15K Shares</a>
+                    </div>
+                   
+                </div>
+                <div class="comment_shair_separetor"></div>
+                <div class="actions">
+                    <ul>
+                        <li><img src="./images/likee.png" alt=""> Like</li>
+                        <li><img src="./images/comment.png" alt=""> Comments</li>
+                        <li><img src="./images/shaire.png" alt=""> Share</li>
+                    </ul>
+                </div>
+
+            </div>
+
         </div>
         <aside class="right_aside">
               <div class="birthday_box">

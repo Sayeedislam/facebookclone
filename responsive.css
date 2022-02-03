@@ -1,0 +1,48 @@
+@media (max-width:1100px) {
+    .search_box input {
+        display: none;
+    }
+
+    .profile_add_btn {
+        display: block;
+
+    }
+
+    .profile_container {
+        display: none;
+    }
+
+    .profile_area ul li:nth-child(1) {
+        display: none;
+    }
+
+    nav ul li:nth-child(6) {
+        display: block;
+    }
+
+    nav ul li:nth-child(4) {
+        display: none;
+    }
+
+    nav ul li:nth-child(5) {
+        display: none;
+    }
+
+    .left_aside {
+        display: none;
+    }
+}
+
+@media (max-width:992px) {
+    nav {
+        display: none;
+    }
+
+    .menu_toggoler {
+        display: block;
+    }
+
+    .right_aside {
+        display: none;
+    }
+}

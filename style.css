@@ -44,6 +44,7 @@ a {
     position: fixed;
     top: 0px;
     left: 0px;
+    z-index: 100;
 }
 
 .search_area {
@@ -86,18 +87,99 @@ a {
     color: rgb(229, 229, 229);
 }
 
+.menu_toggoler {
+    display: none;
+}
+
+.menues {
+    width: 35px;
+    height: 35px;
+    color: white;
+    border-radius: 50%;
+    margin: 0px 9px;
+    background: rgb(88, 84, 84);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 nav ul {
     display: flex;
     align-items: center;
 }
 
-nav ul li {
-    padding: 8px 23px;
-    margin: 0px 6px;
+nav ul li {}
+
+nav ul li:nth-child(4) {
+    position: relative;
+}
+
+nav ul li:nth-child(4)::after {
+    border-radius: 10px;
+    text-align: center;
+    content: "15";
+    color: white;
+    font-weight: 700;
+    font-size: 11px;
+    position: absolute;
+    width: 23px;
+    height: 17px;
+    background-color: red;
+    top: 0px;
+    right: 20px;
+}
+
+nav ul li:nth-child(2) {
+    position: relative;
+}
+
+nav ul li:nth-child(2)::after {
+    border-radius: 10px;
+    text-align: center;
+    content: "50";
+    color: white;
+    font-weight: 700;
+    font-size: 11px;
+    position: absolute;
+    width: 23px;
+    height: 17px;
+    background-color: red;
+    top: 0px;
+    right: 18px;
+}
+
+nav ul li:nth-child(6) {
+    display: none;
 }
 
 nav ul li a {
+
     color: rgb(229, 229, 229);
+    display: inline-block;
+    padding: 6px 36px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgb(76, 76, 76);
+    position: relative;
+
+}
+
+nav ul li a:hover::after {
+    position: absolute;
+    content: attr(data-tag);
+    background-color: #858685ec;
+    top: 48px;
+    left: 15px;
+    width: 90px;
+    height: 38px;
+    padding: 5px 0px;
+    text-align: center;
+    border-radius: 6px;
+
+
 }
 
 nav ul li a span {
@@ -140,6 +222,21 @@ nav ul li a span {
     border-radius: 50%;
 }
 
+.profile_add_btn {
+    display: none;
+}
+
+.add_icon_box {
+    background: rgb(131, 131, 131);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 37px;
+}
+
 .profile_area ul {
     display: flex;
     align-items: center;
@@ -148,6 +245,10 @@ nav ul li a span {
 .profile_area ul li {
     padding: 9px;
     margin: 0px 6px;
+}
+
+.profile_area ul li:nth-child(1) {
+    display: block;
 }
 
 .profile_area ul li a {
@@ -314,7 +415,6 @@ button:hover {
 }
 
 .story {
-    /* border-radius: 8px; */
     display: flex;
     height: 200px;
     flex-basis: 18%;
@@ -338,12 +438,10 @@ button:hover {
 }
 
 .story_avator {
-    border: 1px solid #11ff696b;
+    border: 3px solid rgb(17, 152, 255);
     position: absolute;
     top: 7px;
     left: 8px;
-    /* bottom: -6px; */
-    b: absolute;
     width: 33px;
     height: 33px;
     border-radius: 50%;
@@ -358,7 +456,6 @@ button:hover {
     width: 100%;
     object-fit: cover;
     height: 100%;
-    /* border-radius: 8px; */
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -366,27 +463,26 @@ button:hover {
 .own_story_content {
     position: relative;
     flex-basis: 50px;
-    background: #525050cc;
-    /* border-radius: 8px; */
+    background: rgba(82, 80, 80, 0.8);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 
 .own_story_content h3 {
     font-size: 16px;
-    padding: 10px 9px 0;
-    /* margin: auto; */
+    padding: 10px 6px 0px;
 }
 
 .own_story_content span {
+    cursor: pointer;
     position: absolute;
     top: -15px;
     left: 50%;
-    background: #2eb3fb;
+    background: rgb(46, 179, 251);
     color: white;
     transform: translateX(-50%);
     border-radius: 50%;
-    border: 1px solid #302f2f;
+    border: 1px solid rgb(48, 47, 47);
     padding: 2px;
 }
 
@@ -480,6 +576,7 @@ button:hover {
 }
 
 .room_area {
+    position: relative;
     margin: 15px auto;
     display: flex;
     align-items: center;
@@ -522,7 +619,7 @@ button:hover {
 .room_area ul li {
     width: 40px;
     height: 40px;
-    margin: 0px 1px;
+    margin: 0px 10px;
     display: flex;
     align-items: center;
 }
@@ -532,16 +629,23 @@ button:hover {
     max-width: 100%;
 }
 
-.position_style {}
-
-.position_style span {
+.position_style {
+    cursor: pointer;
+    top: 12px;
+    position: absolute;
     width: 45px;
     height: 45px;
-    background: rgb(129, 126, 122);
+    background: rgba(104, 104, 104, 0.94);
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    right: 8px;
+    transition: all 0.3s ease 0s;
+}
+
+.position_style:hover {
+    background-color: rgba(69, 67, 67, 0.92);
 }
 
 .single_post {
@@ -823,3 +927,5 @@ button:hover {
 }
 
 .iconss img {}
+
+.story img {}
