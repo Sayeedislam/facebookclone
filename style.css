@@ -612,6 +612,7 @@ button:hover {
 }
 
 .room_area ul {
+    margin-right: 43px;
     display: flex;
     align-items: center;
 }
